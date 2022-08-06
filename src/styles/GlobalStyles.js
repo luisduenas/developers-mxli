@@ -12,7 +12,6 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    background-color: blue;
     width: 90%;
     max-width: 1200px;
     margin: 2em auto;
