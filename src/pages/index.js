@@ -1,18 +1,24 @@
 import React from "react"
-import ProfileCard from "../components/ProfileCard"
+import Profile from "../components/Profile"
 import people from "../components/people.json"
+import styled from "styled-components"
+
+const ProfileList = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+`
 
 export default function Home() {
   return (
-    <div>
+    <ProfileList>
       {people.map(profile => (
-        <ProfileCard
+        <Profile
           key={profile.id}
           firstName={profile.first_name}
           lastName={profile.last_name}
           email={profile.email}
         />
       ))}
-    </div>
+    </ProfileList>
   )
 }
