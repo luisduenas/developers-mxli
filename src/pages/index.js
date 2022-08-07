@@ -17,6 +17,8 @@ export default function Home() {
           firstName={profile.first_name}
           lastName={profile.last_name}
           email={profile.email}
+          github={profile.github}
+          isWorking={profile.isWorking}
         />
       ))}
     </ProfileList>
