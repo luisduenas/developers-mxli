@@ -12,7 +12,8 @@ const ProfileCard = styled.div`
   line-height: 1.75;
 `
 
-const Profile = ({ firstName, lastName, email, github, isWorking, skills }) => {
+const Profile = props => {
+  const { firstName, lastName, email, github, isWorking, skills } = props
   return (
     <ProfileCard>
       <ProfilePicture />
