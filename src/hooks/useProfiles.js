@@ -13,16 +13,16 @@ const useProfiles = () => {
       }
 
       if (employmentStatus === "unemployed") {
-        updateProfiles(profiles.filter(profile => !profile.employed))
+        updateProfiles(people.filter(profile => !profile.employed))
       }
 
       if (employmentStatus === "employed") {
-        updateProfiles(profiles.filter(profile => profile.employed))
+        updateProfiles(people.filter(profile => profile.employed))
       }
     } else {
       if (employmentStatus === "all") {
         updateProfiles(
-          profiles.filter(
+          people.filter(
             profile =>
               profile.firstName.includes(name) ||
               profile.lastName.includes(name)
@@ -32,7 +32,7 @@ const useProfiles = () => {
 
       if (employmentStatus === "unemployed") {
         updateProfiles(
-          profiles.filter(
+          people.filter(
             profile =>
               (profile.firstName.includes(name) ||
                 profile.lastName.includes(name)) &&
@@ -43,7 +43,7 @@ const useProfiles = () => {
 
       if (employmentStatus === "employed") {
         updateProfiles(
-          profiles.filter(
+          people.filter(
             profile =>
               (profile.firstName.includes(name) ||
                 profile.lastName.includes(name)) &&

@@ -7,7 +7,7 @@ import useProfiles from "../hooks/useProfiles"
 
 export default function Home() {
   const [employmentStatus, setEmploymentStatus, name, setName, profiles] =
-    useProfiles(employmentStatus)
+    useProfiles()
 
   return (
     <Seo>
