@@ -3,10 +3,11 @@ import Header from "../components/Header"
 import Footer from "../components/Footer"
 import ProfileList from "../components/ProfileList"
 import { Seo } from "../components/Seo"
-import useEmploymentStatus from "../hooks/useEmploymentStatus"
+import useProfiles from "../hooks/useProfiles"
 
 export default function Home() {
-  const [employmentStatus, setEmploymentStatus] = useEmploymentStatus()
+  const { employmentStatus, setEmploymentStatus, profiles } =
+    useProfiles(employmentStatus)
 
   return (
     <Seo>
@@ -14,7 +15,7 @@ export default function Home() {
         employmentStatus={employmentStatus}
         setEmploymentStatus={setEmploymentStatus}
       />
-      <ProfileList employmentStatus={employmentStatus} />
+      <ProfileList profiles={profiles} />
       <Footer />
     </Seo>
   )

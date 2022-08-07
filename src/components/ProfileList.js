@@ -1,7 +1,6 @@
 import React from "react"
 import Profile from "./Profile"
 import styled from "styled-components"
-import useProfiles from "../hooks/useProfiles"
 
 const ProfileListContainer = styled.div`
   display: grid;
@@ -17,9 +16,7 @@ const ProfileListContainer = styled.div`
   }
 `
 
-const ProfileList = ({ employmentStatus }) => {
-  const [profiles] = useProfiles(employmentStatus)
-
+const ProfileList = ({ profiles }) => {
   return (
     <ProfileListContainer>
       {profiles.map(profile => (

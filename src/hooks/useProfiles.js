@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react"
 import people from "../components/people.json"
 
-const useProfiles = employmentStatus => {
+const useProfiles = () => {
+  const [employmentStatus, setEmploymentStatus] = useState("")
   const [profiles, updateProfiles] = useState(people)
 
   useEffect(() => {
@@ -18,7 +19,7 @@ const useProfiles = employmentStatus => {
     }
   }, [employmentStatus])
 
-  return [profiles]
+  return { employmentStatus, setEmploymentStatus, profiles }
 }
 
 export default useProfiles
