@@ -6,7 +6,7 @@
     "email": "vtucsell0@hibu.com",
     "github": "jatempa",
     "skills": ["javascript", "reactjs", "php", "symfony", "flutter", "linux"],
-    "isWorking": true
+    "employed": true
   },
   {
     "id": "54119f05-cce9-47f4-b717-bcdc445568a3",
@@ -15,7 +15,7 @@
     "email": "jjunes1@ebay.co.uk",
     "github": "jjunes1",
     "skills": ["c", "php"],
-    "isWorking": true
+    "employed": true
   },
   {
     "id": "7ddd6f4d-04bf-469a-b283-132ee7a386a1",
@@ -24,7 +24,7 @@
     "email": "gbingell2@dot.gov",
     "github": "gbingell2",
     "skills": ["flutter"],
-    "isWorking": false
+    "employed": false
   },
   {
     "id": "0470118c-df01-4f20-9d10-e1dc02bf5c0d",
@@ -33,7 +33,7 @@
     "email": "mlob3@merriam-webster.com",
     "github": "mlob3",
     "skills": ["c", "c#", "symfony"],
-    "isWorking": true
+    "employed": true
   },
   {
     "id": "eb1e53b8-d3c9-42c1-8ac0-497a56ec6271",
@@ -42,7 +42,7 @@
     "email": "pvalenti4@1688.com",
     "github": "pvalenti4",
     "skills": ["java", "php", "python"],
-    "isWorking": false
+    "employed": false
   },
   {
     "id": "64aab76c-2aae-4114-a7ac-05115a13dc9e",
@@ -51,7 +51,7 @@
     "email": "dgoudy5@accuweather.com",
     "github": "dgoudy5",
     "skills": ["wordpress", "php", "linux"],
-    "isWorking": false
+    "employed": false
   },
   {
     "id": "48b474ee-5e2f-4e7e-afac-d150bfbeba9f",
@@ -60,7 +60,7 @@
     "email": "amckintosh6@biglobe.ne.jp",
     "github": "amckintosh6",
     "skills": ["go", "php", "linux"],
-    "isWorking": false
+    "employed": false
   },
   {
     "id": "c561364f-d423-44c3-996b-29779ff1cb3c",
@@ -69,7 +69,7 @@
     "email": "gladon7@tinyurl.com",
     "github": "gladon7",
     "skills": ["c", "python", "symfony"],
-    "isWorking": true
+    "employed": true
   },
   {
     "id": "f56570af-a233-4d31-a046-7111b9653a85",
@@ -78,7 +78,7 @@
     "email": "pbattabee8@vinaora.com",
     "github": "pbattabee8",
     "skills": ["vuejs", "php", "laravel"],
-    "isWorking": false
+    "employed": false
   },
   {
     "id": "a85c8315-0214-4171-8c30-557a0c6e42ed",
@@ -87,7 +87,7 @@
     "email": "eyaus9@artisteer.com",
     "github": "eyaus9",
     "skills": ["ruby", "go"],
-    "isWorking": false
+    "employed": false
   },
   {
     "id": "3a89a9e6-de0a-493c-97ff-b56fed163523",
@@ -96,7 +96,7 @@
     "email": "tmanuelya@sciencedaily.com",
     "github": "tmanuelya",
     "skills": ["reactjs", "php", "drupal"],
-    "isWorking": true
+    "employed": true
   },
   {
     "id": "d9e8ca9f-2eeb-4e9c-ab44-22b3d67e9b09",
@@ -105,7 +105,7 @@
     "email": "mknottleyb@ca.gov",
     "github": "mknottleyb",
     "skills": ["php", "symfony"],
-    "isWorking": false
+    "employed": false
   },
   {
     "id": "a4a37291-9e61-43dc-93c0-237c9bd8bdfc",
@@ -114,7 +114,7 @@
     "email": "afilippyevc@51.la",
     "github": "afilippyevc",
     "skills": ["vuejs", "php", "laravel"],
-    "isWorking": false
+    "employed": false
   },
   {
     "id": "803ee508-0a7c-447e-8eca-48d8542b3f42",
@@ -123,7 +123,7 @@
     "email": "ksullivand@usnews.com",
     "github": "ksullivand",
     "skills": ["flutter", "linux"],
-    "isWorking": true
+    "employed": true
   },
   {
     "id": "3976b864-c8ed-4794-910d-160f43f10715",
@@ -132,7 +132,7 @@
     "email": "jbockhe@eventbrite.com",
     "github": "jbockhe",
     "skills": ["c", "c++"],
-    "isWorking": false
+    "employed": false
   },
   {
     "id": "0ad97ee7-2df7-4061-bf2c-94dd77aee230",
@@ -141,7 +141,7 @@
     "email": "dgiddonsf@jimdo.com",
     "github": "dgiddonsf",
     "skills": ["reactjs", "php", "symfony"],
-    "isWorking": false
+    "employed": false
   },
   {
     "id": "e457cbf2-c1c6-41a0-850d-6f4fc484d588",
@@ -150,7 +150,7 @@
     "email": "tfriddg@noaa.gov",
     "github": "tfriddg",
     "skills": ["reactjs", "php", "symfony"],
-    "isWorking": true
+    "employed": true
   },
   {
     "id": "a493326f-5fca-4688-ae32-cf3bb3f776ee",
@@ -159,7 +159,7 @@
     "email": "tgrimmetth@blog.com",
     "github": "tgrimmetth",
     "skills": ["reactjs", "php", "symfony"],
-    "isWorking": false
+    "employed": false
   },
   {
     "id": "dcda14db-863b-4c13-8000-6eb9673cf0c3",
@@ -168,7 +168,7 @@
     "email": "wspurretti@weather.com",
     "github": "wspurretti",
     "skills": ["reactjs", "php", "symfony"],
-    "isWorking": false
+    "employed": false
   },
   {
     "id": "b3eb8039-94d6-48ef-8f41-c04e6fef7b75",
@@ -177,7 +177,7 @@
     "email": "ebergej@joomla.org",
     "github": "ebergej",
     "skills": ["reactjs", "php", "symfony"],
-    "isWorking": false
+    "employed": false
   },
   {
     "id": "9dc3f2b0-a1f8-4b43-a93b-2466531d1580",
@@ -186,7 +186,7 @@
     "email": "mbrumbyk@friendfeed.com",
     "github": "mbrumbyk",
     "skills": ["reactjs", "php", "symfony"],
-    "isWorking": false
+    "employed": false
   },
   {
     "id": "db6b5c4c-73a3-426f-9fc0-61e121de3a86",
@@ -195,7 +195,7 @@
     "email": "postlerl@zimbio.com",
     "github": "postlerl",
     "skills": ["reactjs", "php", "symfony"],
-    "isWorking": true
+    "employed": true
   },
   {
     "id": "2da6872b-163f-4c5d-805c-735580956687",
@@ -204,7 +204,7 @@
     "email": "fabramovicm@naver.com",
     "github": "fabramovicm",
     "skills": ["reactjs", "php", "symfony"],
-    "isWorking": true
+    "employed": true
   },
   {
     "id": "44b5216e-4ddf-4eb6-86a9-1af1ed5a20f4",
@@ -213,7 +213,7 @@
     "email": "ydesremediosn@drupal.org",
     "github": "ydesremediosn",
     "skills": ["reactjs", "php", "symfony"],
-    "isWorking": true
+    "employed": true
   },
   {
     "id": "a1da084a-2e50-47f7-89cf-f687aafe2a5d",
@@ -222,7 +222,7 @@
     "email": "rhalfhideo@simplemachines.org",
     "github": "rhalfhideo",
     "skills": ["reactjs", "php", "symfony"],
-    "isWorking": true
+    "employed": true
   },
   {
     "id": "4b174bfb-0203-48ac-ab40-b7e1bc6e34b9",
@@ -231,7 +231,7 @@
     "email": "ifouracrep@berkeley.edu",
     "github": "ifouracrep",
     "skills": ["reactjs", "php", "symfony"],
-    "isWorking": false
+    "employed": false
   },
   {
     "id": "d4504bf6-3535-40f2-bc92-aa00e69a3bd4",
@@ -240,7 +240,7 @@
     "email": "dchatersq@webs.com",
     "github": "dchatersq",
     "skills": ["reactjs", "php", "symfony"],
-    "isWorking": true
+    "employed": true
   },
   {
     "id": "f76418d9-dcfc-423c-a3f4-978b64325670",
@@ -249,7 +249,7 @@
     "email": "gforsonr@phpbb.com",
     "github": "gforsonr",
     "skills": ["reactjs", "php", "symfony"],
-    "isWorking": true
+    "employed": true
   },
   {
     "id": "04b8de77-785a-47dc-bef7-4042e218648b",
@@ -258,7 +258,7 @@
     "email": "tlowselys@sciencedaily.com",
     "github": "tlowselys",
     "skills": ["reactjs", "php", "symfony"],
-    "isWorking": false
+    "employed": false
   },
   {
     "id": "1948a5b6-6ed6-4e7f-92fb-4a170d796a8d",
@@ -267,6 +267,6 @@
     "email": "ecoardt@google.com.au",
     "github": "ecoardt",
     "skills": ["reactjs", "php", "symfony"],
-    "isWorking": true
+    "employed": true
   }
 ]
