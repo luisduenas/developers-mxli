@@ -25,7 +25,9 @@ const Profile = props => {
           </span>
         </li>
         <li>
-          <span>Status: {isWorking ? "Working" : "Not working"}</span>
+          <span>
+            Status: {isWorking ? "Currently with work" : "Unemployed"}
+          </span>
         </li>
         <li>
           <span>Skills: {skills.join(", ")}</span>

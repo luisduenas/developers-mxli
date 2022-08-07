@@ -55,7 +55,7 @@ const EmploymentStatusFilter = ({ isWorking, setIsWorking }) => {
         onClick={() => setIsWorking(!isWorking)}
         className={!isWorking ? "active" : null}
       >
-        {!isWorking ? "Not working" : "All"}
+        {!isWorking ? "Unemployed" : "All"}
       </StatusPill>
     </EmploymentStatusFilterContainer>
   )
