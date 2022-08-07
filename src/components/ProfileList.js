@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react"
+import React from "react"
 import Profile from "./Profile"
 import styled from "styled-components"
-import people from "../components/people.json"
+import useProfiles from "../hooks/useProfiles"
 
 const ProfileListContainer = styled.div`
   display: grid;
@@ -18,21 +18,7 @@ const ProfileListContainer = styled.div`
 `
 
 const ProfileList = ({ employmentStatus }) => {
-  const [profiles, updateProfiles] = useState(people)
-
-  useEffect(() => {
-    if (employmentStatus === "all") {
-      updateProfiles(people)
-    }
-
-    if (employmentStatus === "unemployed") {
-      updateProfiles(people.filter(profile => !profile.employed))
-    }
-
-    if (employmentStatus === "employed") {
-      updateProfiles(people.filter(profile => profile.employed))
-    }
-  }, [employmentStatus])
+  const [profiles] = useProfiles(employmentStatus)
 
   return (
     <ProfileListContainer>
