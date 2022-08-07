@@ -4,11 +4,10 @@ import styled from "styled-components"
 const EmploymentStatusFilterContainer = styled.div`
   position: sticky;
   top: 0;
-  left: 0;
   background-color: white;
   height: 100px;
-  display: flex;
   margin-bottom: 35px;
+  display: flex;
   align-items: center;
 
   h2 {
