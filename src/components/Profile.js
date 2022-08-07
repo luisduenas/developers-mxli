@@ -13,22 +13,19 @@ const ProfileCard = styled.div`
 `
 
 const Profile = props => {
-  const { firstName, lastName, email, github, isWorking, skills } = props
+  const { firstName, lastName, github, isWorking, skills } = props
   return (
     <ProfileCard>
       <ProfilePicture />
       <h2>{`${firstName} ${lastName}`}</h2>
-      <h3>{email}</h3>
       <ul>
         <li>
           <span>
-            Github: <a href="#">{`@${github}`}</a>
+            Github: <a href={`https://github.com/${github}`}>{`@${github}`}</a>
           </span>
         </li>
         <li>
-          <span>
-            Employment Status: {isWorking ? "Working" : "Not working"}
-          </span>
+          <span>Status: {isWorking ? "Working" : "Not working"}</span>
         </li>
         <li>
           <span>Skills: {skills.join(", ")}</span>
