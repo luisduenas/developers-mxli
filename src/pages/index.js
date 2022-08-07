@@ -4,11 +4,18 @@ import ProfileList from "../components/ProfileList"
 import EmploymentStatusFilter from "../components/EmploymentStatusFilter"
 import { SEO } from "../components/SEO"
 
+import useEmploymentStatus from "../hooks/useEmploymentStatus"
+
 export default function Home() {
+  const [employmentStatus, setEmploymentStatus] = useEmploymentStatus()
+
   return (
     <SEO>
-      <EmploymentStatusFilter />
-      <ProfileList />
+      <EmploymentStatusFilter
+        employmentStatus={employmentStatus}
+        setEmploymentStatus={setEmploymentStatus}
+      />
+      <ProfileList employmentStatus={employmentStatus} />
       <Footer />
     </SEO>
   )

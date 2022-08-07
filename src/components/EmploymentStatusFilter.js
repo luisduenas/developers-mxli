@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import styled from "styled-components"
 
 const EmploymentStatusFilterContainer = styled.div`
@@ -38,19 +38,15 @@ const StatusPill = styled.span`
   }
 `
 
-const EmploymentStatusFilter = () => {
-  const [isWorking, setIsWorking] = useState(false)
-
+const EmploymentStatusFilter = ({ employmentStatus, setEmploymentStatus }) => {
   return (
     <EmploymentStatusFilterContainer>
       <StatusLabel>Status:</StatusLabel>
       <StatusPill
-        onClick={() => {
-          setIsWorking(!isWorking)
-        }}
-        className={!isWorking ? "active" : null}
+        onClick={() => setEmploymentStatus(!employmentStatus)}
+        className={!employmentStatus ? "active" : null}
       >
-        {!isWorking ? "Unemployed" : "All"}
+        {!employmentStatus ? "Unemployed" : "All"}
       </StatusPill>
     </EmploymentStatusFilterContainer>
   )

@@ -17,10 +17,10 @@ const ProfileListContainer = styled.div`
   }
 `
 
-const ProfileList = ({ isWorking }) => {
+const ProfileList = ({ employmentStatus }) => {
   return (
     <ProfileListContainer>
-      {!isWorking
+      {!employmentStatus
         ? people
             .filter(profile => !profile.isWorking)
             .map(profile => <Profile key={profile.id} {...profile} />)
