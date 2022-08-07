@@ -19,35 +19,19 @@ const StatusLabel = styled.span`
   margin-right: 10px;
 `
 
-const StatusPill = styled.span`
-  border: 1px solid black;
-  font-size: 1.07rem;
-  width: 150px;
-  height: 30px;
-  padding: 5px;
-  text-align: center;
-
-  &:hover {
-    cursor: pointer;
-  }
-
-  &.active {
-    font-weight: bold;
-    color: white;
-    background-color: blue;
-  }
-`
-
 const EmploymentStatusFilter = ({ employmentStatus, setEmploymentStatus }) => {
+  const handleChange = event => {
+    setEmploymentStatus(event.target.value)
+  }
+
   return (
     <EmploymentStatusFilterContainer>
       <StatusLabel>Status:</StatusLabel>
-      <StatusPill
-        onClick={() => setEmploymentStatus(!employmentStatus)}
-        className={!employmentStatus ? "active" : null}
-      >
-        {!employmentStatus ? "Unemployed" : "All"}
-      </StatusPill>
+      <select value={employmentStatus} onChange={handleChange}>
+        <option value="all">All</option>
+        <option value="employed">Employed</option>
+        <option value="unemployed">Unemployed</option>
+      </select>
     </EmploymentStatusFilterContainer>
   )
 }

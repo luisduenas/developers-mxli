@@ -1,10 +1,7 @@
-import { useReducer } from "react"
+import { useState } from "react"
 
 const useEmploymentStatus = () => {
-  const [employmentStatus, setEmploymentStatus] = useReducer(
-    employmentStatus => !employmentStatus,
-    false
-  )
+  const [employmentStatus, setEmploymentStatus] = useState("")
 
   return [employmentStatus, setEmploymentStatus]
 }
