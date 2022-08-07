@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import styled from "styled-components"
 
 const EmploymentStatusFilterContainer = styled.div`
@@ -7,16 +7,16 @@ const EmploymentStatusFilterContainer = styled.div`
   margin-bottom: 35px;
   align-items: center;
 
-  h1 {
+  h2 {
     margin-right: 15px;
   }
 `
 
-const StatusPill = styled.div`
+const StatusLabel = styled.span`
+  display: inline-block;
   font-size: 1.2rem;
-  margin-right: 20px;
-  padding: 10px;
-  text-align: center;
+  font-weight: bold;
+  margin-right: 10px;
 
   &:hover {
     cursor: pointer;
@@ -29,24 +29,34 @@ const StatusPill = styled.div`
   }
 `
 
-const EmploymentStatusFilter = () => {
-  const [isWorking, setIsWorking] = useState(false)
-  const [isNotWorking, setIsNotWorking] = useState(false)
+const StatusPill = styled.span`
+  border: 1px solid #f3f3f3;
+  font-size: 1.2rem;
+  width: 150px;
+  height: 30px;
+  padding: 5px;
+  text-align: center;
 
+  &:hover {
+    cursor: pointer;
+  }
+
+  &.active {
+    font-weight: bold;
+    color: white;
+    background-color: blue;
+  }
+`
+
+const EmploymentStatusFilter = ({ isWorking, setIsWorking }) => {
   return (
     <EmploymentStatusFilterContainer>
-      <h1>Status:</h1>
+      <StatusLabel>Working:</StatusLabel>
       <StatusPill
         onClick={() => setIsWorking(!isWorking)}
-        className={isWorking ? "active" : null}
+        className={!isWorking ? "active" : null}
       >
-        Working
-      </StatusPill>
-      <StatusPill
-        onClick={() => setIsNotWorking(!isNotWorking)}
-        className={isNotWorking ? "active" : null}
-      >
-        Not working
+        {!isWorking ? "Not working" : "All"}
       </StatusPill>
     </EmploymentStatusFilterContainer>
   )
