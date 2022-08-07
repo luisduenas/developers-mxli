@@ -38,7 +38,7 @@ const StatusPill = styled.span`
   }
 `
 
-const EmploymentStatusFilter = ({ getEmploymentStatus }) => {
+const EmploymentStatusFilter = () => {
   const [isWorking, setIsWorking] = useState(false)
 
   return (
@@ -47,7 +47,6 @@ const EmploymentStatusFilter = ({ getEmploymentStatus }) => {
       <StatusPill
         onClick={() => {
           setIsWorking(!isWorking)
-          getEmploymentStatus(isWorking)
         }}
         className={!isWorking ? "active" : null}
       >

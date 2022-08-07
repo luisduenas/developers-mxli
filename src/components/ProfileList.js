@@ -1,6 +1,9 @@
+import React from "react"
+import Profile from "./Profile"
 import styled from "styled-components"
+import people from "../components/people.json"
 
-export const ProfileList = styled.div`
+const ProfileListContainer = styled.div`
   display: grid;
   gap: 25px;
   grid-template-columns: repeat(4, 1fr);
@@ -13,3 +16,17 @@ export const ProfileList = styled.div`
     grid-template-columns: repeat(2, 1fr);
   }
 `
+
+const ProfileList = ({ isWorking }) => {
+  return (
+    <ProfileListContainer>
+      {!isWorking
+        ? people
+            .filter(profile => !profile.isWorking)
+            .map(profile => <Profile key={profile.id} {...profile} />)
+        : people.map(profile => <Profile key={profile.id} {...profile} />)}
+    </ProfileListContainer>
+  )
+}
+
+export default ProfileList
