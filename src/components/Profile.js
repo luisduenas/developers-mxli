@@ -6,6 +6,16 @@ const ProfilePicture = styled.div`
   width: 250px;
   height: 250px;
   background-color: aliceblue;
+
+  @media (max-width: 800px) {
+    width: 200px;
+    height: 200px;
+  }
+
+  @media (max-width: 600px) {
+    width: 150px;
+    height: 150px;
+  }
 `
 
 const ProfileCard = styled.div`
