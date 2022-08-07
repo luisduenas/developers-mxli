@@ -1,11 +1,11 @@
 [
   {
     "id": "f013e7e0-61d7-49af-b799-e3392a9948e1",
-    "firstName": "Valaree",
-    "lastName": "Tucsell",
+    "firstName": "Jorge",
+    "lastName": "Atempa",
     "email": "vtucsell0@hibu.com",
-    "github": "vtucsell0",
-    "skills": ["reactjs", "php", "symfony"],
+    "github": "jatempa",
+    "skills": ["javascript", "reactjs", "php", "symfony", "flutter", "linux"],
     "isWorking": true
   },
   {
