@@ -4,12 +4,13 @@ import Footer from "../components/Footer"
 import people from "../components/people.json"
 import { ProfileList } from "../components/ProfileList"
 import EmploymentStatusFilter from "../components/EmploymentStatusFilter"
+import { SEO } from "../components/SEO"
 
 export default function Home() {
   const [isWorking, setIsWorking] = useState(false)
 
   return (
-    <>
+    <SEO>
       <EmploymentStatusFilter
         isWorking={isWorking}
         setIsWorking={setIsWorking}
@@ -22,6 +23,6 @@ export default function Home() {
           : people.map(profile => <Profile key={profile.id} {...profile} />)}
       </ProfileList>
       <Footer />
-    </>
+    </SEO>
   )
 }
