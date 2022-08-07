@@ -1,9 +1,8 @@
 import React from "react"
+import Header from "../components/Header"
 import Footer from "../components/Footer"
 import ProfileList from "../components/ProfileList"
-import EmploymentStatusFilter from "../components/EmploymentStatusFilter"
 import { Seo } from "../components/Seo"
-
 import useEmploymentStatus from "../hooks/useEmploymentStatus"
 
 export default function Home() {
@@ -11,7 +10,7 @@ export default function Home() {
 
   return (
     <Seo>
-      <EmploymentStatusFilter
+      <Header
         employmentStatus={employmentStatus}
         setEmploymentStatus={setEmploymentStatus}
       />
