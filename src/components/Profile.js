@@ -13,9 +13,15 @@ const ProfileCard = styled.div`
   padding-bottom: 18px;
 `
 
-const Profile = props => {
-  const { firstName, lastName, email, github, isWorking } = props
-
+const Profile = ({
+  id,
+  firstName,
+  lastName,
+  email,
+  github,
+  isWorking,
+  skills,
+}) => {
   return (
     <ProfileCard>
       <ProfilePicture />
@@ -31,6 +37,9 @@ const Profile = props => {
           <span>
             Employment Status: {isWorking ? "Working" : "Not working"}
           </span>
+        </li>
+        <li>
+          <span>Skills: {skills.join(", ")}</span>
         </li>
       </ul>
     </ProfileCard>
