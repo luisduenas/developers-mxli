@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { useStaticQuery, graphql } from "gatsby"
+import { useSiteMetadata } from "../hooks/use-site-metadata"
 
 const FooterContainer = styled.div`
   height: 50px;
@@ -12,18 +12,7 @@ const FooterContainer = styled.div`
 `
 
 const Footer = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          author
-          twitter
-        }
-      }
-    }
-  `)
-
-  const { author, twitter } = data.site.siteMetadata
+  const { author, twitter } = useSiteMetadata()
   return (
     <FooterContainer>
       <p>
