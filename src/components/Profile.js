@@ -10,18 +10,9 @@ const ProfilePicture = styled.div`
 
 const ProfileCard = styled.div`
   line-height: 1.75;
-  padding-bottom: 18px;
 `
 
-const Profile = ({
-  id,
-  firstName,
-  lastName,
-  email,
-  github,
-  isWorking,
-  skills,
-}) => {
+const Profile = ({ firstName, lastName, email, github, isWorking, skills }) => {
   return (
     <ProfileCard>
       <ProfilePicture />
