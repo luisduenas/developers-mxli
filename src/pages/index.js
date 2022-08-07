@@ -14,7 +14,7 @@ export default function Home() {
       <EmploymentStatusFilter
         isWorking={isWorking}
         setIsWorking={setIsWorking}
-      ></EmploymentStatusFilter>
+      />
       <ProfileList>
         {!isWorking
           ? people
