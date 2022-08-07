@@ -23,14 +23,13 @@ const StatusLabel = styled.span`
   }
 
   &.active {
-    border: none;
     color: white;
     background-color: blue;
   }
 `
 
 const StatusPill = styled.span`
-  border: 1px solid #f3f3f3;
+  border: 1px solid black;
   font-size: 1.2rem;
   width: 150px;
   height: 30px;
