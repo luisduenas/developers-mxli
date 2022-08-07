@@ -26,11 +26,11 @@ const ProfileList = ({ employmentStatus }) => {
     }
 
     if (employmentStatus === "unemployed") {
-      updateProfiles(people.filter(profile => !profile.isWorking))
+      updateProfiles(people.filter(profile => !profile.employed))
     }
 
     if (employmentStatus === "employed") {
-      updateProfiles(people.filter(profile => profile.isWorking))
+      updateProfiles(people.filter(profile => profile.employed))
     }
   }, [employmentStatus])
 

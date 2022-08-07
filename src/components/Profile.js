@@ -23,7 +23,7 @@ const ProfileCard = styled.div`
 `
 
 const Profile = props => {
-  const { firstName, lastName, github, isWorking, skills } = props
+  const { firstName, lastName, github, skills } = props
   return (
     <ProfileCard>
       <ProfilePicture />
@@ -32,11 +32,6 @@ const Profile = props => {
         <li>
           <span>
             Github: <a href={`https://github.com/${github}`}>{`@${github}`}</a>
-          </span>
-        </li>
-        <li>
-          <span>
-            Status: {isWorking ? "Currently with work" : "Unemployed"}
           </span>
         </li>
         <li>
