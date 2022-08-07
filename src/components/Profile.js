@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import "./Profile.css"
 
 const ProfilePicture = styled.div`
   height: 250px;
@@ -17,6 +16,10 @@ const ProfilePicture = styled.div`
 
 const ProfileCard = styled.div`
   line-height: 1.75;
+
+  ul {
+    list-style-type: none;
+  }
 `
 
 const Profile = props => {
