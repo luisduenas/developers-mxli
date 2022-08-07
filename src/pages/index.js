@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import Profile from "../components/Profile"
 import Footer from "../components/Footer"
 import people from "../components/people.json"
@@ -6,15 +6,15 @@ import { ProfileList } from "../components/ProfileList"
 import EmploymentStatusFilter from "../components/EmploymentStatusFilter"
 import { SEO } from "../components/SEO"
 
-export default function Home() {
-  const [isWorking, setIsWorking] = useState(false)
+function getEmploymentStatus(isWorking) {
+  return isWorking
+}
 
+export default function Home() {
+  const isWorking = getEmploymentStatus() ?? false
   return (
     <SEO>
-      <EmploymentStatusFilter
-        isWorking={isWorking}
-        setIsWorking={setIsWorking}
-      />
+      <EmploymentStatusFilter getEmploymentStatus={getEmploymentStatus} />
       <ProfileList>
         {!isWorking
           ? people

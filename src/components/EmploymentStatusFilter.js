@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import styled from "styled-components"
 
 const EmploymentStatusFilterContainer = styled.div`
@@ -6,7 +6,6 @@ const EmploymentStatusFilterContainer = styled.div`
   top: 0;
   background-color: white;
   height: 100px;
-  margin-bottom: 35px;
   display: flex;
   align-items: center;
 
@@ -16,24 +15,13 @@ const EmploymentStatusFilterContainer = styled.div`
 `
 
 const StatusLabel = styled.span`
-  display: inline-block;
   font-size: 1.2rem;
-  font-weight: bold;
   margin-right: 10px;
-
-  &:hover {
-    cursor: pointer;
-  }
-
-  &.active {
-    color: white;
-    background-color: blue;
-  }
 `
 
 const StatusPill = styled.span`
   border: 1px solid black;
-  font-size: 1.2rem;
+  font-size: 1.07rem;
   width: 150px;
   height: 30px;
   padding: 5px;
@@ -50,12 +38,17 @@ const StatusPill = styled.span`
   }
 `
 
-const EmploymentStatusFilter = ({ isWorking, setIsWorking }) => {
+const EmploymentStatusFilter = ({ getEmploymentStatus }) => {
+  const [isWorking, setIsWorking] = useState(false)
+
   return (
     <EmploymentStatusFilterContainer>
       <StatusLabel>Status:</StatusLabel>
       <StatusPill
-        onClick={() => setIsWorking(!isWorking)}
+        onClick={() => {
+          setIsWorking(!isWorking)
+          getEmploymentStatus(isWorking)
+        }}
         className={!isWorking ? "active" : null}
       >
         {!isWorking ? "Unemployed" : "All"}
