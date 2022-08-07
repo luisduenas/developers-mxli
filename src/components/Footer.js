@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { useSiteMetadata } from "../hooks/use-site-metadata"
+import { useSiteMetadata } from "../hooks/useSiteMetadata"
 
 const FooterContainer = styled.div`
   height: 50px;
