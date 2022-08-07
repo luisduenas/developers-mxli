@@ -16,10 +16,10 @@ const HeaderContainer = styled.div`
   }
 `
 
-const Header = ({ employmentStatus, setEmploymentStatus }) => {
+const Header = ({ employmentStatus, setEmploymentStatus, name, setName }) => {
   return (
     <HeaderContainer>
-      <SearchBar setEmploymentStatus={setEmploymentStatus} />
+      <SearchBar name={name} setName={setName} />
       <EmploymentStatusFilter
         employmentStatus={employmentStatus}
         setEmploymentStatus={setEmploymentStatus}

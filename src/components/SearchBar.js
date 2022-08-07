@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import { Label } from "./Label"
 import styled from "styled-components"
 
@@ -10,12 +10,9 @@ const SearchBarInput = styled.input`
   height: 25px;
 `
 
-const SearchBar = ({ setEmploymentStatus }) => {
-  const [name, setName] = useState("")
-
+const SearchBar = ({ name, setName }) => {
   const handleChange = event => {
     setName(event.target.value)
-    setEmploymentStatus(event.target.value)
   }
 
   return (

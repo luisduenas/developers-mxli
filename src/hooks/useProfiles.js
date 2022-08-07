@@ -2,24 +2,59 @@ import { useEffect, useState } from "react"
 import people from "../components/people.json"
 
 const useProfiles = () => {
-  const [employmentStatus, setEmploymentStatus] = useState("")
+  const [name, setName] = useState("")
+  const [employmentStatus, setEmploymentStatus] = useState("all")
   const [profiles, updateProfiles] = useState(people)
 
   useEffect(() => {
-    if (employmentStatus === "all") {
-      updateProfiles(people)
-    }
+    if (!name || name.length === 0 || name === "") {
+      if (employmentStatus === "all") {
+        updateProfiles(people)
+      }
 
-    if (employmentStatus === "unemployed") {
-      updateProfiles(people.filter(profile => !profile.employed))
-    }
+      if (employmentStatus === "unemployed") {
+        updateProfiles(profiles.filter(profile => !profile.employed))
+      }
 
-    if (employmentStatus === "employed") {
-      updateProfiles(people.filter(profile => profile.employed))
-    }
-  }, [employmentStatus])
+      if (employmentStatus === "employed") {
+        updateProfiles(profiles.filter(profile => profile.employed))
+      }
+    } else {
+      if (employmentStatus === "all") {
+        updateProfiles(
+          profiles.filter(
+            profile =>
+              profile.firstName.includes(name) ||
+              profile.lastName.includes(name)
+          )
+        )
+      }
 
-  return { employmentStatus, setEmploymentStatus, profiles }
+      if (employmentStatus === "unemployed") {
+        updateProfiles(
+          profiles.filter(
+            profile =>
+              (profile.firstName.includes(name) ||
+                profile.lastName.includes(name)) &&
+              !profile.employed
+          )
+        )
+      }
+
+      if (employmentStatus === "employed") {
+        updateProfiles(
+          profiles.filter(
+            profile =>
+              (profile.firstName.includes(name) ||
+                profile.lastName.includes(name)) &&
+              profile.employed
+          )
+        )
+      }
+    }
+  }, [name, employmentStatus])
+
+  return [employmentStatus, setEmploymentStatus, name, setName, profiles]
 }
 
 export default useProfiles
