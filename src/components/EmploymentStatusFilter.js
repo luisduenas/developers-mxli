@@ -2,7 +2,11 @@ import React from "react"
 import styled from "styled-components"
 
 const EmploymentStatusFilterContainer = styled.div`
-  height: 50px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: white;
+  height: 100px;
   display: flex;
   margin-bottom: 35px;
   align-items: center;
