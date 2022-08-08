@@ -18,29 +18,33 @@ const useProfiles = () => {
       }
     } else {
       if (employmentStatus === "all") {
-        filteredResults = people.filter(profile =>
-          `${profile.firstName}${profile.lastName}`
-            .toLowerCase()
-            .trim()
-            .includes(name)
+        filteredResults = people.filter(
+          profile =>
+            `${profile.firstName} ${profile.lastName}`
+              .toLowerCase()
+              .trim()
+              .includes(name) ||
+            profile.skills.join(" ").toLowerCase().trim().includes(name)
         )
       } else if (employmentStatus === "unemployed") {
         filteredResults = people.filter(
           profile =>
-            !profile.employed &&
-            `${profile.firstName}${profile.lastName}`
-              .toLowerCase()
-              .trim()
-              .includes(name)
+            (!profile.employed &&
+              `${profile.firstName} ${profile.lastName}`
+                .toLowerCase()
+                .trim()
+                .includes(name)) ||
+            profile.skills.join(" ").toLowerCase().trim().includes(name)
         )
       } else if (employmentStatus === "employed") {
         filteredResults = people.filter(
           profile =>
-            profile.employed &&
-            `${profile.firstName}${profile.lastName}`
-              .toLowerCase()
-              .trim()
-              .includes(name)
+            (profile.employed &&
+              `${profile.firstName} ${profile.lastName}`
+                .toLowerCase()
+                .trim()
+                .includes(name)) ||
+            profile.skills.join(" ").toLowerCase().trim().includes(name)
         )
       }
     }
