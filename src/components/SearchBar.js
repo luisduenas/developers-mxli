@@ -1,5 +1,5 @@
 import React from "react"
-import { Label } from "./Label"
+import Label from "./Label"
 import styled from "styled-components"
 
 const SearchBarContainer = styled.div`
