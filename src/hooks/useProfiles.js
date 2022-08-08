@@ -17,34 +17,46 @@ const useProfiles = () => {
         filteredResults = people.filter(profile => profile.employed)
       }
     } else {
+      const criteria = name.toLowerCase().trim()
+
       if (employmentStatus === "all") {
         filteredResults = people.filter(
           profile =>
             `${profile.firstName} ${profile.lastName}`
               .toLowerCase()
               .trim()
-              .includes(name) ||
-            profile.skills.join(" ").toLowerCase().trim().includes(name)
+              .includes(criteria) ||
+            profile.skills.join(" ").toLowerCase().trim().includes(criteria)
         )
       } else if (employmentStatus === "unemployed") {
         filteredResults = people.filter(
           profile =>
-            (!profile.employed &&
+            ((!profile.employed &&
               `${profile.firstName} ${profile.lastName}`
                 .toLowerCase()
                 .trim()
-                .includes(name)) ||
-            profile.skills.join(" ").toLowerCase().trim().includes(name)
+                .includes(criteria)) ||
+              profile.skills
+                .join(" ")
+                .toLowerCase()
+                .trim()
+                .includes(criteria)) &&
+            !profile.employed
         )
       } else if (employmentStatus === "employed") {
         filteredResults = people.filter(
           profile =>
-            (profile.employed &&
+            ((!profile.employed &&
               `${profile.firstName} ${profile.lastName}`
                 .toLowerCase()
                 .trim()
-                .includes(name)) ||
-            profile.skills.join(" ").toLowerCase().trim().includes(name)
+                .includes(criteria)) ||
+              profile.skills
+                .join(" ")
+                .toLowerCase()
+                .trim()
+                .includes(criteria)) &&
+            profile.employed
         )
       }
     }
