@@ -7,51 +7,45 @@ const useProfiles = () => {
   const [profiles, updateProfiles] = useState(people)
 
   useEffect(() => {
-    if (!name || name.length === 0 || name === "") {
+    let filteredResults = []
+    if (name.length < 3) {
       if (employmentStatus === "all") {
-        updateProfiles(people)
-      }
-
-      if (employmentStatus === "unemployed") {
-        updateProfiles(people.filter(profile => !profile.employed))
-      }
-
-      if (employmentStatus === "employed") {
-        updateProfiles(people.filter(profile => profile.employed))
+        filteredResults = people
+      } else if (employmentStatus === "unemployed") {
+        filteredResults = people.filter(profile => !profile.employed)
+      } else if (employmentStatus === "employed") {
+        filteredResults = people.filter(profile => profile.employed)
       }
     } else {
       if (employmentStatus === "all") {
-        updateProfiles(
-          people.filter(
-            profile =>
-              profile.firstName.includes(name) ||
-              profile.lastName.includes(name)
-          )
+        filteredResults = people.filter(profile =>
+          `${profile.firstName}${profile.lastName}`
+            .toLowerCase()
+            .trim()
+            .includes(name)
         )
-      }
-
-      if (employmentStatus === "unemployed") {
-        updateProfiles(
-          people.filter(
-            profile =>
-              (profile.firstName.includes(name) ||
-                profile.lastName.includes(name)) &&
-              !profile.employed
-          )
+      } else if (employmentStatus === "unemployed") {
+        filteredResults = people.filter(
+          profile =>
+            !profile.employed &&
+            `${profile.firstName}${profile.lastName}`
+              .toLowerCase()
+              .trim()
+              .includes(name)
         )
-      }
-
-      if (employmentStatus === "employed") {
-        updateProfiles(
-          people.filter(
-            profile =>
-              (profile.firstName.includes(name) ||
-                profile.lastName.includes(name)) &&
-              profile.employed
-          )
+      } else if (employmentStatus === "employed") {
+        filteredResults = people.filter(
+          profile =>
+            profile.employed &&
+            `${profile.firstName}${profile.lastName}`
+              .toLowerCase()
+              .trim()
+              .includes(name)
         )
       }
     }
+
+    updateProfiles(filteredResults)
   }, [name, employmentStatus])
 
   return [employmentStatus, setEmploymentStatus, name, setName, profiles]
