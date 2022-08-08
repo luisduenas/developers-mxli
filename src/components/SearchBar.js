@@ -7,15 +7,23 @@ const SearchBarContainer = styled.div`
 `
 
 const SearchBarInput = styled.input`
+  font-size: 1.2rem;
   height: 25px;
-  min-width: 250px;
+  min-width: 320px;
+  border: none;
 
   @media (max-width: 800px) {
     min-width: 80px;
   }
 
   @media (max-width: 600px) {
-    min-width: 50px;
+    font-size: 1rem;
+    min-width: 250px;
+  }
+
+  &:focus {
+    outline: none;
+    border: 1px solid blue;
   }
 `
 
