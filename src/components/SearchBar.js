@@ -8,6 +8,15 @@ const SearchBarContainer = styled.div`
 
 const SearchBarInput = styled.input`
   height: 25px;
+  min-width: 250px;
+
+  @media (max-width: 800px) {
+    min-width: 80px;
+  }
+
+  @media (max-width: 600px) {
+    min-width: 50px;
+  }
 `
 
 const SearchBar = ({ name, setName }) => {
