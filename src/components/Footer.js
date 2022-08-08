@@ -19,7 +19,7 @@ const Footer = () => {
         Created by {author}
         {` / `}
         <span>
-          <a href={`https://twitter.com/${twitter}`}>{twitter}</a>
+          <a href={`https://twitter.com/${twitter}`}>@{twitter}</a>
         </span>
       </p>
     </FooterContainer>
