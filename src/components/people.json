@@ -20,7 +20,23 @@
     "firstName": "Alfonso",
     "lastName": "Medina",
     "github": "4lfonsomedina",
-    "skills": ["Desarrollo de APPs", "PWA", "APIs", "WebAPPs"],
+    "skills": [
+      "PHP",
+      "C",
+      "Java",
+      "C#",
+      "Javascript",
+      "Codeigniter",
+      "Laravel",
+      "Cordova",
+      "JQuery",
+      "VueJS",
+      "NodeJS",
+      "Bootstrap",
+      "Foundation",
+      "Windows",
+      "Linux"
+    ],
     "employed": true
   }
 ]
