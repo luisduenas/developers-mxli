@@ -17,8 +17,12 @@ const SearchBar = ({ name, setName }) => {
 
   return (
     <SearchBarContainer>
-      <Label>B&uacute;squeda:</Label>
-      <SearchBarInput value={name} onChange={handleChange} />
+      <Label>Search:</Label>
+      <SearchBarInput
+        value={name}
+        onChange={handleChange}
+        placeholder={"introduce a profile name ..."}
+      />
     </SearchBarContainer>
   )
 }
