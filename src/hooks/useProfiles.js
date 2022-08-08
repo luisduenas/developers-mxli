@@ -8,11 +8,16 @@ const useProfiles = () => {
 
   useEffect(() => {
     let filteredResults = []
-    if (name.length < 3) {
+    if (name.length < 1) {
       filteredResults = people.filter(profile => {
-        if (employmentStatus === "employed") return profile.employed
-        if (employmentStatus === "unemployed") return !profile.employed
-        return profile
+        switch (employmentStatus) {
+          case "employed":
+            return profile.employed
+          case "unemployed":
+            return !profile.employed
+          default:
+            return profile
+        }
       })
     } else {
       const criteria = name.toLowerCase().trim()
@@ -25,11 +30,14 @@ const useProfiles = () => {
             .includes(criteria) ||
           profile.skills.join(" ").toLowerCase().trim().includes(criteria)
 
-        if (employmentStatus === "employed")
-          return filteredProfile && profile.employed
-        if (employmentStatus === "unemployed")
-          return filteredProfile && !profile.employed
-        return filteredProfile
+        switch (employmentStatus) {
+          case "employed":
+            return profile.employed && filteredProfile
+          case "unemployed":
+            return !profile.employed && filteredProfile
+          default:
+            return filteredProfile
+        }
       })
     }
 
