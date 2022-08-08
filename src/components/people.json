@@ -4,7 +4,15 @@
     "firstName": "Jorge",
     "lastName": "Atempa",
     "github": "jatempa",
-    "skills": ["javascript", "reactjs", "php", "symfony", "flutter", "linux"],
+    "skills": [
+      "javascript",
+      "reactjs",
+      "php",
+      "symfony",
+      "flutter",
+      "linux",
+      "git"
+    ],
     "employed": true
   },
   {
