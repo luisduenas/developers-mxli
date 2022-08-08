@@ -9,56 +9,28 @@ const useProfiles = () => {
   useEffect(() => {
     let filteredResults = []
     if (name.length < 3) {
-      if (employmentStatus === "all") {
-        filteredResults = people
-      } else if (employmentStatus === "unemployed") {
-        filteredResults = people.filter(profile => !profile.employed)
-      } else if (employmentStatus === "employed") {
-        filteredResults = people.filter(profile => profile.employed)
-      }
+      filteredResults = people.filter(profile => {
+        if (employmentStatus === "employed") return profile.employed
+        if (employmentStatus === "unemployed") return !profile.employed
+        return profile
+      })
     } else {
       const criteria = name.toLowerCase().trim()
 
-      if (employmentStatus === "all") {
-        filteredResults = people.filter(
-          profile =>
-            `${profile.firstName} ${profile.lastName}`
-              .toLowerCase()
-              .trim()
-              .includes(criteria) ||
-            profile.skills.join(" ").toLowerCase().trim().includes(criteria)
-        )
-      } else if (employmentStatus === "unemployed") {
-        filteredResults = people.filter(
-          profile =>
-            ((!profile.employed &&
-              `${profile.firstName} ${profile.lastName}`
-                .toLowerCase()
-                .trim()
-                .includes(criteria)) ||
-              profile.skills
-                .join(" ")
-                .toLowerCase()
-                .trim()
-                .includes(criteria)) &&
-            !profile.employed
-        )
-      } else if (employmentStatus === "employed") {
-        filteredResults = people.filter(
-          profile =>
-            ((!profile.employed &&
-              `${profile.firstName} ${profile.lastName}`
-                .toLowerCase()
-                .trim()
-                .includes(criteria)) ||
-              profile.skills
-                .join(" ")
-                .toLowerCase()
-                .trim()
-                .includes(criteria)) &&
-            profile.employed
-        )
-      }
+      filteredResults = people.filter(profile => {
+        const filteredProfile =
+          `${profile.firstName} ${profile.lastName}`
+            .toLowerCase()
+            .trim()
+            .includes(criteria) ||
+          profile.skills.join(" ").toLowerCase().trim().includes(criteria)
+
+        if (employmentStatus === "employed")
+          return filteredProfile && profile.employed
+        if (employmentStatus === "unemployed")
+          return filteredProfile && !profile.employed
+        return filteredProfile
+      })
     }
 
     updateProfiles(filteredResults)
