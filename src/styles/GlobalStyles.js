@@ -7,8 +7,10 @@ const GlobalStyles = createGlobalStyle`
     padding: 0;
   }
 
-  :root {
-    font-family: helvetica, arial, sans-serif;
+  @import url(//fonts.googleapis.com/css?family=Syne);
+
+  html {
+    font-family: 'Syne', Arial, Helvetica, sans-serif;
   }
 
   body {
