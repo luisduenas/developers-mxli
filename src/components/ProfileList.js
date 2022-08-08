@@ -10,6 +10,7 @@ const NoResults = styled.div`
 `
 
 const ProfileListContainer = styled.div`
+  min-height: 75vh;
   display: grid;
   gap: 25px;
   grid-template-columns: repeat(4, 1fr);
