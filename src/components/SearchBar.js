@@ -38,7 +38,7 @@ const SearchBar = ({ name, setName }) => {
       <SearchBarInput
         value={name}
         onChange={handleChange}
-        placeholder={"Introduce a profile name or skill..."}
+        placeholder={"Introduce a profile name or skill"}
       />
     </SearchBarContainer>
   )
