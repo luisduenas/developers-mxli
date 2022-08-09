@@ -23,7 +23,7 @@ const ProfileCard = styled.div`
 `
 
 const Profile = props => {
-  const { firstName, lastName, github, skills } = props
+  const { firstName, lastName, github, skills, employed } = props
   return (
     <ProfileCard>
       <ProfilePicture />
@@ -35,7 +35,12 @@ const Profile = props => {
           </span>
         </li>
         <li>
-          <span>Skills: {skills.join(", ")}</span>
+          <span>Status: {employed ? "employed" : "unemployed"}</span>
+        </li>
+        <li>
+          <span>
+            Skills: {skills.map(skill => skill.toLowerCase()).join(", ")}
+          </span>
         </li>
       </ul>
     </ProfileCard>
