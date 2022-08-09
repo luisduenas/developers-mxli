@@ -45,7 +45,7 @@
     "firstName": "Alberto",
     "lastName": "Martinez",
     "github": "Eltunas170",
-    "skills": ["html", "css", "javascript", "react", "c#", "git"],
+    "skills": ["html", "css", "javascript", "reactjs", "c#", "git"],
     "employed": false
   }
 ]
