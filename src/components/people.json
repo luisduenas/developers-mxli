@@ -39,5 +39,13 @@
       "Linux"
     ],
     "employed": true
+  },
+  {
+    "id": "7ddd6f4d-04bf-469a-b283-132ee7a386a1",
+    "firstName": "Alberto",
+    "lastName": "Martinez",
+    "github": "Eltunas170",
+    "skills": ["html", "css", "javascript", "react", "c#", "git"],
+    "employed": false
   }
 ]
