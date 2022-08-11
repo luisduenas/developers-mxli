@@ -55,5 +55,13 @@
     "github": "QuinteroBriana",
     "skills": ["Javascript", "jquery", "html", "css", "c#", "c++", "java"],
     "employed": false
+  },
+  {
+    "id": "eb1e53b8-d3c9-42c1-8ac0-497a56ec6271",
+    "firstName": "Salma",
+    "lastName": "Rosas",
+    "github": "SalmaRosas",
+    "skills": ["Javascript", "html", "css", "php", "c#", "java"],
+    "employed": false
   }
 ]
