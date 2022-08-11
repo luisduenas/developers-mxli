@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import people from "../components/people.json"
+import people from "../data/people.json"
 
 const useProfiles = () => {
   const [name, setName] = useState("")
