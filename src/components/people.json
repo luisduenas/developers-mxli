@@ -47,5 +47,13 @@
     "github": "Eltunas170",
     "skills": ["html", "css", "javascript", "reactjs", "c#", "git"],
     "employed": false
+  },
+  {
+    "id": "0470118c-df01-4f20-9d10-e1dc02bf5c0d",
+    "firstName": "Briana",
+    "lastName": "Quintero",
+    "github": "QuinteroBriana",
+    "skills": ["Javascript", "jquery", "html", "css", "c#", "c++", "java"],
+    "employed": false
   }
 ]
