@@ -90,5 +90,13 @@
       "Unreal Engine"
     ],
     "employed": true
+  },
+  {
+    "id": "1687e7fb-46c4-42f5-9079-92f9e8cdfbe4",
+    "firstName": "Rosendo",
+    "lastName": "Moncada",
+    "github": "rosendo655",
+    "skills": ["C#", "C", "MSSQL", "Python", "Java"],
+    "employed": true
   }
 ]
