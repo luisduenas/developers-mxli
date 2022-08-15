@@ -98,5 +98,24 @@
     "github": "rosendo655",
     "skills": ["C#", "C", "MSSQL", "Python", "Java"],
     "employed": true
+  },
+  {
+    "id": "ee50a76f-733c-471e-be34-53329461c4f2",
+    "firstName": "Pablo",
+    "lastName": "Juerez",
+    "github": "tomeragain",
+    "skills": [
+      "javascript",
+      "node",
+      "react",
+      "vue,php",
+      "mysql",
+      "mongodb",
+      "oracle cloud",
+      "aws",
+      "magento",
+      "shopify"
+    ],
+    "employed": true
   }
 ]
