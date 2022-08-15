@@ -63,5 +63,32 @@
     "github": "SalmaRosas",
     "skills": ["Javascript", "html", "css", "php", "c#", "java"],
     "employed": false
+  },
+  {
+    "id": "ad6ae93d-aa34-4a7b-8610-1ed287aba29b",
+    "firstName": "Fernando",
+    "lastName": "Basoco",
+    "github": "fbasoco",
+    "skills": [
+      "Ruby",
+      "Ruby on Rails",
+      "C#",
+      "C++",
+      ".Net Framework",
+      "Javascript",
+      "HTML",
+      "MySQL",
+      "Postgres",
+      "Open GL API",
+      "DirectX API",
+      "Familiar with Python",
+      "Autodesk Forge API",
+      "Matlab",
+      "Tableau",
+      "CATIA (CAD)",
+      "Unity 3D",
+      "Unreal Engine"
+    ],
+    "employed": true
   }
 ]
