@@ -117,5 +117,31 @@
       "shopify"
     ],
     "employed": true
+  },
+  {
+    "id": "4017b9e0-88a0-4e32-bd37-334d1ecd610c",
+    "firstName": "Jonathan",
+    "lastName": "Muñoz",
+    "github": "Jonathan-mp",
+    "skills": [
+      "Python",
+      "Django",
+      "DRF",
+      "Php",
+      "jquery",
+      "css",
+      "bootstrap",
+      "linux",
+      "docker",
+      "docker-compose",
+      "jenkins",
+      "ec2",
+      "s3",
+      "postgresql",
+      "mysql",
+      "git",
+      "scrum"
+    ],
+    "employed": false
   }
 ]
