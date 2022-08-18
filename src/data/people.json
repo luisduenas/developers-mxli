@@ -143,5 +143,13 @@
       "scrum"
     ],
     "employed": true
+  },
+  {
+    "id": "7096a54d-8c10-4dfa-8009-641c2c01eae4",
+    "firstName": "Saúl",
+    "lastName": "Cañedo",
+    "github": "MrDonTacos",
+    "skills": [".Net Framework", "C#", "ASP .NET", "AngularJS", "Javascript"],
+    "employed": true
   }
 ]
