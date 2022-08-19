@@ -217,5 +217,21 @@
       "Git"
     ],
     "employed": true
+  },
+  {
+    "id": "93a8bf15-4119-4a64-add7-10d3acafdb84",
+    "firstName": "Ricardo",
+    "lastName": "Cabrera",
+    "github": "Ricari88",
+    "skills": ["PHP", "Javascript", "Ruby on Rails"],
+    "employed": true
+  },
+  {
+    "id": "b5644e35-2455-4f7d-bad4-6feef52f4244",
+    "firstName": "Andres",
+    "lastName": "Yebra",
+    "github": "andresyebra",
+    "skills": ["Ruby", "Ruby on Rails", "Linux"],
+    "employed": true
   }
 ]
