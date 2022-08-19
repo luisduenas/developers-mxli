@@ -151,5 +151,71 @@
     "github": "MrDonTacos",
     "skills": [".Net Framework", "C#", "ASP .NET", "AngularJS", "Javascript"],
     "employed": true
+  },
+  {
+    "id": "a4a96caa-1409-4388-99a6-61a62f66ed5d",
+    "firstName": "Noe",
+    "lastName": "Nieto",
+    "github": "misaelnieto",
+    "skills": ["Linux", "Python", "Django"],
+    "employed": true
+  },
+  {
+    "id": "9e60ef80-d354-4dd2-9715-561e822cf077",
+    "firstName": "Ari",
+    "lastName": "Villavicencio",
+    "github": "Arivies",
+    "skills": [
+      "php",
+      "C#",
+      "javascript",
+      "JQuery",
+      "laravel",
+      "MySQL",
+      "MSSQL",
+      "git",
+      "linux"
+    ],
+    "employed": true
+  },
+  {
+    "id": "3ab7f042-0391-40dd-9fea-319ce1bc08f6",
+    "firstName": "Eliazar",
+    "lastName": "Lopez",
+    "github": "eliazarnd",
+    "skills": [
+      "JavaScript",
+      "Nodejs",
+      "MySQL",
+      "Mongodb",
+      ".Net Framework",
+      "HTML",
+      "CSS",
+      "vue js",
+      "Python",
+      "React",
+      "Git"
+    ],
+    "employed": true
+  },
+  {
+    "id": "087fab40-29fb-49db-bedb-f59ad1905e85",
+    "firstName": "Francisco",
+    "lastName": "Rivero",
+    "github": "ing-jrivero",
+    "skills": [
+      "Java",
+      "C#",
+      "C++",
+      "Python",
+      "Kotlin",
+      "Xamarin",
+      "HTML",
+      "Css",
+      "Javascript",
+      "Sql",
+      "Git"
+    ],
+    "employed": true
   }
 ]
