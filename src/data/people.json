@@ -233,5 +233,13 @@
     "github": "andresyebra",
     "skills": ["Ruby", "Ruby on Rails", "Linux"],
     "employed": true
+  },
+  {
+    "id": "1336d440-d4b7-4600-859e-738833d61936",
+    "firstName": "Abel",
+    "lastName": "Valdez",
+    "github": "AbelValdez",
+    "skills": ["Angular", "Typescript", ".net", "Node js", "JavaScript"],
+    "employed": true
   }
 ]
