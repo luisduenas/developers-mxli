@@ -241,5 +241,29 @@
     "github": "AbelValdez",
     "skills": ["Angular", "Typescript", ".net", "Node js", "JavaScript"],
     "employed": true
+  },
+  {
+    "id": "61c47d5f-dac7-43da-ae95-61c3c3368b8f",
+    "firstName": "Daniel",
+    "lastName": "Ramos",
+    "github": "DanielRR10",
+    "skills": [
+      "Angular",
+      "Nodejs",
+      "Javascript",
+      "Python",
+      "Pandas",
+      "Numpy",
+      "Seaborn",
+      "Matplotlib",
+      "scikit-learn",
+      "Git",
+      "Power BI",
+      "Tableau",
+      "Sql",
+      "Kotlin",
+      "Android"
+    ],
+    "employed": true
   }
 ]
